@@ -1,0 +1,86 @@
+/* General */
+@import url(https://fonts.googleapis.com/css?family=Lora);
+a:link    {color:blue; background-color:transparent; text-decoration:none}
+a:visited {color:orange; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:navy; background-color:transparent; text-decoration:underline}
+body{text-align:center;}
+#WelcomeMessage p{text-align: left;}
+#NavBar{z-index:1;}
+footer{
+    bottom: 1px;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+a.footer{display: inline-block;vertical-align: middle;}
+.affix {top: 0;width: 100%;}
+.affix + .container-fluid {padding-top: 70px;}
+#imgChomp{
+    height: 50px;
+    width: auto;
+    margin-top: -14px;
+    margin-left: -14px;
+}
+#aChomp {text-align: center;}
+.transparentBox{
+    color: ghostwhite;
+    text-align: center;
+    border: 2px solid white;
+    border-spacing: 0px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px black;
+    background-color: rgba(0,0,0,.65);
+    margin: auto;
+}
+#divFacebook{text-align:center;}
+#divSocialMedia{text-align:center;}
+
+/***** Mobile *****/
+.mobile{display: inherit;}
+.tablet{display: none;}
+.desktop{display: none;}
+.desktopSM{display: none;}
+.desktopMD{display: none;}
+.desktopLG{display: none;}
+.desktopXL{display: none;}
+.tabdesk{display: none;}
+
+/***** Tablet *****/
+@media only screen and (min-width: 600px) {
+  .mobile{display: none;}
+	.tablet{display: inherit;}
+  .tabdesk{display: inherit;}
+}
+
+/***** Desktop *****/
+@media only screen and (min-width: 768px) {
+  .tablet{display: none;}
+  .desktop{display: inherit;}
+  .desktopSM{display: inherit;}
+  .desktopMD{display: none;}
+  .desktopLG{display: none;}
+  .desktopXL{display: none;}
+}
+
+@media only screen and (min-width: 1000px) {
+    .desktopSM{display: none;}
+    .desktopMD{display: inherit;}
+    .desktopLG{display: none;}
+    .desktopXL{display: none;}
+}
+
+@media only screen and (min-width: 1250px) {
+    .desktopSM{display: none;}
+    .desktopMD{display: none;}
+    .desktopLG{display: inherit;}
+    .desktopXL{display: none;}
+}
+
+@media only screen and (min-width: 1500px) {
+    .desktopSM{display: none;}
+    .desktopMD{display: none;}
+    .desktopLG{display: none;}
+    .desktopXL{display: inherit;}
+}

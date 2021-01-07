@@ -1,0 +1,8 @@
+<h1><b>BEHOLD! Our Ferocious Skaters!</b><h1><br>
+<div class="container-fluid">
+  <div class="profile" *ngFor="let skater of skaters">
+      <img class="img-responsive" src="{{skater.image}}">
+      <h3>{{skater.name}}</h3>
+      <h4>{{skater.position}}</h4>
+  </div>
+</div>

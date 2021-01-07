@@ -1,0 +1,126 @@
+<div class="container-fluid">
+    <div id="MediaSelector" class="row">
+        <div class="col-xs-12">
+            <select id="dropdown" (change)="onChange($event.target.value)">
+                <option value="videos">Videos</option>
+                <option value="photos">Photos</option>
+            </select>
+        </div>
+    </div>
+    <br><br>
+    <div id="videos" *ngIf="showVideos">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="vidz" src="https://www.youtube.com/embed/S8KuanHl-FU"
+                            frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="vidz" width="560" height="315" src="https://www.youtube.com/embed/WCvzQzlpsS4"
+                            frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="vidz" width="560" height="315" src="https://www.youtube.com/embed/r-NIoHjW5gk"
+                            frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="vidz" width="560" height="315" src="https://www.youtube.com/embed/AkksZRjNRcA"
+                            frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="vidz" width="560" height="315" src="https://www.youtube.com/embed/OyX2pAoqfm8"
+                            frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="vidz" width="560" height="315" src="https://www.youtube.com/embed/Kp1a_iV5qG8"
+                            frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="photos" *ngIf="showPhotos">
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide1.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide2.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide3.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide4.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide5.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide6.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide7.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide8.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide9.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="photos-mobile">
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide1.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide2.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide3.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide4.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide5.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide6.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide7.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide8.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img id="pic" class="img-responsive" src="images/slideshow/slide9.jpg">
+            </div>
+        </div>
+    </div>
+</div>

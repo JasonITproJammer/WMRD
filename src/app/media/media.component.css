@@ -1,0 +1,20 @@
+/* General */
+#vidz, #pic { padding-bottom: 10px;}
+
+/***** Mobile *****/
+#MediaSelector{display: none;}
+#videos{display: none;}
+#photos{display: none;}
+#photos-mobile{display: inherit;}
+
+/***** Tablet *****/
+@media only screen and (min-width: 600px) {
+  #MediaSelector{display: inherit; text-align:center;}
+  #videos{display: inherit;}
+  #photos{display: inherit;}
+  #photos-mobile{display: none;}
+}
+
+/***** Desktop *****/
+@media only screen and (min-width: 768px) {
+}

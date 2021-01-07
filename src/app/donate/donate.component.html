@@ -1,0 +1,31 @@
+<div class="container-fluid" style="text-align:center;">
+    <div id="DonationText" class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 content">
+            <p>This is some text explaining how donations help WMRD and the community we play in,
+              as well as how to get help volunteer at bouts.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+    <br/>
+<div id="DonationForm" class="row">
+        <div class="col-sm-12">
+            <form ngNoForm id="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="C4FMLZRYQWQE8">
+                <input type="image"
+                       src="http://www.blitzdkrieg.com/bear/images/donate.png"
+                       class="img-responsive"
+                       border="0" name="submit"
+                       alt="PayPal - The safer, easier way to pay online!">
+                <img id="donateIMG" alt="Donate to WMRD" border="0" class="img-responsive"
+                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                     width="1" height="1">
+            </form>
+        </div>
+    </div>
+</div>

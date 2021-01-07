@@ -1,0 +1,32 @@
+[
+  {
+    "image":"../images/skaters/bear.jpg",
+  	"name":"The Bloody Bearon",
+  	"position":"Jammer"
+	},
+  {
+    "image":"../images/skaters/kingpin.jpg",
+  	"name":"Kingpin",
+  	"position":"Pivot"
+	},
+  {
+    "image":"../images/skaters/shenanigans.jpg",
+  	"name":"Shenanigans",
+  	"position":"Blocker"
+	},
+  {
+    "image":"../images/skaters/ruffhouse.jpg",
+  	"name":"Ruffhouse",
+  	"position":"Blocker"
+	},
+  {
+    "image":"../images/skaters/drek.jpg",
+  	"name":"D-Rek",
+  	"position":"Jammer"
+	},
+  {
+    "image":"../images/skaters/trucker.jpg",
+  	"name":"Father Trucker",
+  	"position":"Jammer"
+	}
+]

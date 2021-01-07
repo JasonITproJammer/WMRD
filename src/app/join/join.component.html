@@ -1,0 +1,79 @@
+<!-- Email Form -->
+<!-- http://kusar.ch/2016/02/send-email-with-angular2-and-php/ -->
+
+<div class="container-fluid">
+  <form ngNoForm id="ContactForm" action="mailto:deutscj2@gmatc.matc.edu?Subject=Join WMRD"
+    method="post" enctype="text/plain">
+    <fieldset>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <legend>Be apart of our email list!</legend>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <label class="w100">Name:<input name="Name" class="w80" id="name" type="text" required="required"></label>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <label class="w100">Email:<input name="Email" class="w80" type="email" required="required"></label>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <label>How did you hear about us?</label>
+          <select name="HeardAbout" id="hear-about" (change)="onHeardChange($event.target.value)">
+            <option value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advert">Advert</option>
+            <option value="other">Other</option>
+          </select>
+          <div id="otherHeard" *ngIf="showHeard">
+            <label>If other, please explain:</label><br />
+            <textarea name="OtherHeard" class="w100" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <label>What state are you from?</label>
+          <select name="State" id="state" (change)="onStateChange($event.target.value)">
+            <option value="wisconsin">Wisconsin</option>
+            <option value="minnesota">Minnesota</option>
+            <option value="illinois">Illinois</option>
+            <option value="other">Other</option>
+          </select>
+          <div id="otherState" *ngIf="showState">
+            <label>If other, please explain:</label><br>
+            <textarea name="OtherState" class="w100" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <div id="comments">
+            <label>Comments:</label><br />
+            <textarea name="Comments" class="w100" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+      <div id="signUpChk">
+        <label><input name="SignUp" type="checkbox" checked="checked" /> Sign me up for email updates</label>
+        <input type="submit" value="Send" />
+      </div>
+    </fieldset>
+  </form>
+</div>
